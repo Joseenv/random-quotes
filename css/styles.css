@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.containerQuote {
+    align-items: center;
+    background-color: hsl(218, 23%, 16%);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    height: 100vh;
+    justify-content: center; 
+    width: 100vw;
+}
+
+.quote {
+    align-items: center;
+    background-color: hsl(217, 19%, 24%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 2.5rem 2.5rem 4.5rem 2.5rem ;
+    width: 21rem;
+}
+
+.quote__tittle {
+    color: hsl(150, 100%, 66%);
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.quote__content__paragraph {
+    color: hsl(193, 38%, 86%);
+    font-size: 28px;
+    text-align: center;
+}
+
+.quote__button {
+    background-color: hsl(150, 100%, 66%);
+    border-radius: 100%;
+    border: none;
+    cursor: pointer;
+    padding: 1.25rem;
+    position: relative;
+    top: -32px;
+}
+    .quote__button:hover {
+        box-shadow:  0 0 30px 10px hsl(150, 100%, 66%);
+    }
+
+@media ( min-width: 1440px ) {
+    .quote {
+        width: 35rem;
+    }
+}

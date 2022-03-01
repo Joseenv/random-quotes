@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quotes | Jose Navarro</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="https://unpkg.com/vue@next"></script>
+    <script src="./js/main.js" defer></script>
+    <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+    <div id="app" class="containerQuote">
+        <div class="quote">
+            <h1 class="quote__tittle">ADVICE # {{ quote.id }} </h1>
+            <blockquote class="quote__content">
+                <p class="quote__content__paragraph">
+                    "{{ quote.advice }}"
+                </p>
+            </blockquote>
+            <img src="img/pattern-divider-mobile.svg" alt="" class="quote__divisor">
+        </div>
+        <button @click="getQuote" class="quote__button">
+            <img src="img/icon-dice.svg" alt="" class="quote__button__img">
+        </button>
+    </div>
+</body>
+</html>
